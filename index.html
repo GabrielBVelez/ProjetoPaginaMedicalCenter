@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Flexbox</title>
+    <link rel="stylesheet" href="assepts/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">
+                    <img id="IMGlogo" src="assepts/images/logo.png" />
+                </a>
+            </div>
+            <div class="menu">
+                <!-- DIz que aqui tem um menu -->
+                <nav>
+                    <div class="menuMobile" onclick="menuConfig()">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul id="menuArea">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>Top notch experience</h1>
+                <h2>Medicenter is a responsive template perfect for all screen sizes</h2>
+            </div>
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title">Emergency Case</div>
+                    <div class="banner_description">Algum texto qualquer</div>
+                    <a href="">Read more</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">Doctors Timetable</div>
+                    <div class="banner_description">Algum texto qualquer</div>
+                    <a href="">Read more</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">Openning Hours</div>
+                    <div class="banner_description">
+                        <div class="day1">
+                            <p>Monday - Friday</p>
+                            <p>8:00 - 17:00</p>
+                        </div>
+                        <div class="day2">
+                            <p>Saturday</p>
+                            <p>9:30 - 17:30</p>
+                        </div>
+                        <div class="day3">
+                            <p>Sunday</p>
+                            <p>9:30 - 15:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <!-- Essa é para a estruturação do segundo title que é o Latest news -->
+                    <div class="widget_title">
+                        <!-- Será onde eu colocarei o texto do title -->
+                        <div class="widget_title_text">Latest News</div>
+                        <!-- A barra abaixo do title -->
+                        <div class="widget_title_bar"></div>
+                        <!-- Onde eu colorei o corpo c/ as informações -->
+                        <div class="widget_body flex">
+                            <article>
+                                <!-- Link para acessar a news -->
+                                <a href="">
+                                    <!-- datas -->
+                                    <div class="news_data">
+                                        <div class="news_posted_at">12 JAN 12</div>
+                                        <div class="news_comments">2</div>
+                                    </div>
+                                    <!-- A foto da news -->
+                                    <div class="news_thumbnail">
+                                        <img src="assepts/images/dr.jpg">
+                                    </div>
+                                    <!-- O titulo da news -->
+                                    <div class="news_title">
+                                        Lorem ipsum dolor sit amat velum
+                                    </div>
+                                    <!-- Texto breve sobre qual seria a news -->
+                                    <div class="news_resume">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros
+                                        sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante
+                                        tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing mauris.
+                                    </div>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="">
+                                    <div class="news_data">
+                                        <div class="news_posted_at">12 JAN 12</div>
+                                        <div class="news_comments">2</div>
+                                    </div>
+                                    <div class="news_thumbnail">
+                                        <img src="assepts/images/dr.jpg">
+                                    </div>
+                                    <div class="news_title">
+                                        Lorem ipsum dolor sit amat velum
+                                    </div>
+                                    <div class="news_resume">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros
+                                        sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante
+                                        tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing mauris.
+                                    </div>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="">
+                                    <div class="news_data">
+                                        <div class="news_posted_at">12 JAN 12</div>
+                                        <div class="news_comments">2</div>
+                                    </div>
+                                    <div class="news_thumbnail">
+                                        <img src="assepts/images/dr.jpg">
+                                    </div>
+                                    <div class="news_title">
+                                        Lorem ipsum dolor sit amat velum
+                                    </div>
+                                    <div class="news_resume">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros
+                                        sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante
+                                        tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing mauris.
+                                    </div>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="">
+                                    <div class="news_data">
+                                        <div class="news_posted_at">12 JAN 12</div>
+                                        <div class="news_comments">2</div>
+                                    </div>
+                                    <div class="news_thumbnail">
+                                        <img src="assepts/images/dr.jpg">
+                                    </div>
+                                    <div class="news_title">
+                                        Lorem ipsum dolor sit amat velum
+                                    </div>
+                                    <div class="news_resume">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros
+                                        sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante
+                                        ss tellus ornare mi, et mollis tellus neque vitae elit. Mauris adipiscing
+                                        mauris.
+                                    </div>
+                                </a>
+                            </article>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <!-- Essa é para cada divisão de conteudo dentro do aside, o departaments e o make an appointment -->
+                <div class="widget">
+                    <!-- Essa é para a estruturação do primeiro title que é o departaments -->
+                    <div class="widget_title">
+                        <!-- Será onde eu colocarei o texto do title -->
+                        <div class="widget_title_text">Departaments</div>
+                        <!-- A barra abaixo do title -->
+                        <div class="widget_title_bar"></div>
+                        <!-- Onde eu colorei o corpo c/ as informações -->
+                        <div class="widget_body">
+                            <div class="depart_body">
+                                <a href="">
+                                    <div class="depart_blocos"></div>
+                                </a>
+                                <a href="">
+                                    <div class="depart_blocos"></div>
+                                </a>
+                                <a href="">
+                                    <div class="depart_blocos"></div>
+                                </a>
+                                <a href="">
+                                    <div class="depart_blocos"></div>
+                                </a>
+                                <a href="">
+                                    <div class="depart_blocos"></div>
+                                </a>
+                                <a href="">
+                                    <div class="depart_blocos"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="widget">
+                            <!-- Essa é para a estruturação do segundo title que é o Appointment -->
+                            <div class="widget_title">
+                                <!-- Será onde eu colocarei o texto do title -->
+                                <div class="widget_title_text">Make An Appointment</div>
+                                <!-- A barra abaixo do title -->
+                                <div class="widget_title_bar"></div>
+                                <!-- Onde eu colorei o corpo c/ as informações -->
+                                <div class="widget_body">
+                                    <div class="appoint_body">
+                                        <div class="appoint_text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Ut volutpat rutrum eros sit amet sollicitudin.</div>
+                                        <div class="appoint_contact">
+                                            <div class="appoint_phone">
+                                                by phone: <strong style="color: black;">1-800-643-4300</strong>
+                                            </div>
+                                            <div class="appoint_email">
+                                                by e-mail: <a href="">medicenter@mail.com</a>
+                                            </div>
+                                            <div class="appoint_form">
+                                                or <a href="">fill in the form</a> on our contact page
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    <div class="banner4_title">Heath Insurance</div>
+                    <a href="">Here in medicenter we have individual ⇢</a>
+                </div>
+                <div class="fm_2">
+                    <div class="banner5_title">Medical Records</div>
+                    <a href="">Here in medicenter we have individual ⇢</a>
+                </div>
+                <div class="fm_3">
+                    <div class="banner6_title">Online Bill Pay</div>
+                    <a href="">Here in medicenter we have individual ⇢</a>
+                </div>
+            </div>
+            <div class="footer_area">
+                <div class="footer_areaItem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Medicenter Clinic</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <div class="areaTextFooter">
+                                Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada individual.
+                            </div>
+                            <div class="areaTitleAddress">
+                                Medicenter Clinic
+                            </div>
+                            <div class="areaAddressContact">
+                                <div class="areaAddress">
+                                    33 Farlane Street 
+                                </div>
+                                <div class="areaAddress">
+                                    Keilor East
+                                </div>
+                                <div class="areaAddress">
+                                    VIC 3033, Australia
+                                </div>
+                                <div class="areaContact">
+                                    +123 655 655  
+                                </div>
+                                <div class="areaContact">
+                                    +123 755 755
+                                </div>
+                                <div class="areaContact">
+                                    <a href="">medicenter@email.com</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaItem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Post</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body" >
+                            <div class="textPostFooter">
+                                ⇢
+                                <a href="">Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada.</a> 
+                                <div class="datePostFooter">9 years ago</div>
+                            </div>
+                            <div class="textPostFooter">
+                                ⇢
+                                <a href="">Lorem ipsum dolor sit amat velum.</a> 
+                                <div class="datePostFooter">9 years ago</div>
+                            </div>
+                            <div class="textPostFooter">
+                                ⇢
+                                <a href="">Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada.</a> 
+                                <div class="datePostFooter">10 years ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaItem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Tweets</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <div class="textTweetFooter">
+                                <tag style="color: white;">⇢ </tag>
+                                We've released new version (v6.8) of our #Timetable #Responsive #Booking #Schedule #WP Plugin. Please check at…
+                                <a href="">t.co/hdxFfHD5NK</a>
+                                <div class="dateTweetFooter">19 days ago</div>
+                            </div>
+                            <div class="textTweetFooter">
+                                <tag style="color: white;">⇢ </tag>
+                                We have released new version (v6.1) of our Prestige #Portfolio #CV #vCard #WordPress #Theme Check at #ThemeForest
+                                <a href="">t.co/0jRV18Ce6x</a> 
+                                <div class="dateTweetFooter">27 days ago</div>
+                            </div>
+                            <div class="textTweetFooter">
+                                <tag style="color: white;">⇢ </tag>
+                                We've released new version (v13.2) of our MediCenter #Health #Medical #Clinic #WordPress Theme. Please check at…
+                                <a href="">t.co/s3LFzGxvFr</a> 
+                                <div class="dateTweetFooter">29 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_copy">
+                Copyright - Todos os direitos reservados 
+                <a href="">Termos de Responsabilidade</a>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="assepts/js/script.js"></script>
+</body>
+</html>

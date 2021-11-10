@@ -1,0 +1,571 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho da pag */
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    
+}
+
+/* Container dentro do header */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.logo{ 
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+/* Lista de menu, oragnização e estilização */
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+/* Endereço dos links e estilização dos elementos da TAG a dentro da NAV */
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+
+nav a:hover {
+    background-color: #39aae1;
+    color: white;
+}
+
+/*Banner e suas estilizações*/
+#banner {
+    background-image: url('../images/capa.jpg');
+    background-position: center;
+    background-size: cover; /*A imagem vai expandir para preencher o espaço*/
+    height: 670px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Coloco como column todas as coisas dentro do container */
+.column {
+    flex-direction: column;
+}
+
+/* Texto que fica centralizado no banner grande */
+.banner_headline{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilização do H1 dentro do headline */
+.banner_headline h1 {
+    font-size: 70px;
+    color: white;
+    text-shadow: 0px 1px 0px black;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+/* Estilização do H2 dentro do headline */
+.banner_headline h2 {
+    font-size: 21px;
+    color: white;
+    text-shadow: 0px 1px 0px black;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+/* Estilização da parte de baixo do banner, com as informações.  */
+.banner_options {
+    height: 210px;
+    display: flex;
+}
+
+/* Estilização dos Banners dentro do banner_options */
+.banner1, 
+.banner2, 
+.banner3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+
+/* Coloração do banner1  */
+.banner1 {
+    background-color: #39aae1;
+}
+
+/* Coloração do banner2  */
+.banner2 {
+    background-color: #0079c7;
+}
+
+/* Coloração do banner3  */
+.banner3 {
+    background-color: #2b4c99;
+}
+
+/* Tamanho da fonte dos titulos dentro dos banner1, 2 e 3 */
+.banner_title{
+    font-size: 21px;
+}
+
+/* Estilização do conteudo dentro dos banner1, 2 e 3 */
+.banner_description {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilização do botao Read more dentro do banner1, 2 e 3 */
+.banner_options a {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+ /* Estilização dentro do conteudo do banner3 */
+.day1, 
+.day2,
+.day3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+/* Estilização geral da section */
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+/* Colocando a section que está dentro da section geral com o flex dois para ocupar o maior espaço da pag */
+#geral section {
+    flex: 2;
+}
+
+/* Deixando com flex um o aside para que tenha um espaço menor que a section */
+#geral aside {
+    flex: 1;
+}
+
+/* Estilização dos titles dos topicos  */
+.widget_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Estilização do texto constituido nos titles topicos */
+.widget_title_text {
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* Estilização da barrinha abaixo do titulo */
+.widget_title_bar {
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Serve para deixar as news uma do lado da outra. */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilização dos artigos presentes nas news */
+article {
+    /* Fazendo isso, ele garante que independente do height ele vai deixar as duas do mesmo lado caso a news seja pelo menor que 300px */
+    /* Serve para colocar as news de um mesmo tamanho */
+    flex: 1;
+    min-width: 300px; /* Limita a largura do elemento em 300px, caso seja maior que isso ele coloca a proxima news embaixo */
+    margin-right: 20px;
+}
+
+/* Tira os sublinhados da tag a */
+article a {
+    text-decoration: none;
+}
+
+/* Coloca a data e os comentarios um do lado do outro */
+article .news_data{
+    display: flex;
+}
+
+/* Estilização da Data */
+article .news_posted_at {
+    background-color: #2b4c99;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+/* Estilização dos comentarios*/
+article .news_comments {
+    background-color: #39aae1;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+
+/* Separação da foto para com a data e os comentarios */
+article .news_thumbnail {
+    margin-top: 30px;
+}
+
+/* Estilização da foto */
+article .news_thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilização do title das news */
+article .news_title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    color: black;
+}
+
+/* Estilização do resumo das news */
+article .news_resume {
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+/* Estilização da area depart */
+.depart_body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilização dos blocos do depart */
+.depart_blocos {
+    width: 150px;
+    height: 150px;
+    background-color: #39aae1;
+    margin-bottom: 30px;
+}
+
+.appoint_body {
+    display: flex;
+    flex-direction: column;
+}
+
+.appoint_text{
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    line-height: 20px;
+    color: #5c5c5c;
+}
+
+.appoint_phone,
+.appoint_email,
+.appoint_form {
+    padding: 12px;
+    font-size: 15px;
+}
+
+.appoint_phone {
+    color: #5c5c5c;
+    border-top: 1px solid rgb(146, 146, 146);
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+.appoint_email {
+    color:#5c5c5c;
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+.appoint_form {
+    color: #5c5c5c;
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu {
+    height: 120px;
+    display: flex;
+}
+
+.fm_1, 
+.fm_2, 
+.fm_3 {
+    flex: 1;
+    padding: 20px;
+    color: white;
+    font-size: 23px;
+    line-height: 40px;
+}
+
+/* Coloração do banner4  */
+.fm_1 {
+    background-color: #39aae1;
+}
+
+/* Coloração do banner5  */
+.fm_2 {
+    background-color: #0079c7;
+}
+
+/* Coloração do banner6  */
+.fm_3 {
+    background-color: #2b4c99;
+}
+
+.footer_menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    width: 300px;
+}
+
+.footer_area {
+    display: flex;
+}
+
+.footer_areaItem {
+    flex: 1;
+    color: white;
+}
+
+/* Serve para deixar os dois footer um embaixo do outro. Sem ele ficaria um do lado do outro */     
+.flexColumn {
+    flex-direction: column;
+}
+
+footer .widget_title_text {
+    color: white;
+}
+
+.footer_copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #727272;
+    margin-top: 30px;
+}
+
+.areaTextFooter {
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    color: #727272;
+}
+
+.areaTitleAddress {
+    font-size: 15px;
+    color: #727272;
+}
+
+.areaAddressContact {
+    font-size: 15px;
+    color: #727272;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60px;
+}
+
+.areaAddressContact a {
+    color: white;
+}
+
+.textPostFooter {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.textPostFooter a {
+    color:white;
+    text-decoration: none;
+}
+
+.datePostFooter {
+    color: #0079c7;
+    font-size: 12px;
+}
+
+.textTweetFooter {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #727272;
+}
+
+.textTweetFooter a {
+    color:white;
+    text-decoration: none;
+}
+
+.dateTweetFooter {
+    color: #0079c7;
+    font-size: 12px;
+}
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height: 3px;
+    background-color: #39aae1;
+}
+
+
+/* A partir de 600px de largura maxima ele vai colocar essas configs */
+@media (max-width:600px) {
+    .banner_headline {
+        padding: 30px;
+    }
+
+    .banner_headline h1 {
+        font-size: 45px;
+    }
+
+    .banner_headline h2 {
+        font-size: 20px;
+        
+    }
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container  {
+        flex-direction: column;
+    }
+
+    #geral section {
+        margin-top: 50px;
+        padding: 20px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #geral aside {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .footer_menu {
+        flex-direction: column;
+    }
+
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 250px;
+    }
+
+    .footer_copy {
+        padding-left: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    /* Como colocar o menu */
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+
+    /* Tirar a altura fixa do header */
+    header {
+        height: auto;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width: 900px ) {
+
+    .footer_menu {
+        flex-direction: column;
+    }
+
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 250px;
+    }
+
+    .footer_copy {
+        padding-left: 20px;
+    }
+
+}
+
+@media (max-width: 525px) {
+    .footer_copy {
+        padding-left: 20px;
+        font-size: 11px ;
+    }
+}
+
+
